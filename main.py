@@ -223,6 +223,6 @@ async def create_upload_file(file: UploadFile = File(...)):
 #     color = extract_color(file.filename)
 #     category = predict_category(file.filename)
 
-    os.remove(file.filename)
+    # os.remove(file.filename)
 
-    return {"Category": category, "Color": color}
+    # return {"Category": category, "Color": color}
