@@ -1,5 +1,4 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
-import os
 import torch
 from torchvision import transforms
 import torchvision.transforms as transforms
@@ -10,6 +9,7 @@ import numpy as np
 import random
 import cv2
 import pickle
+import os
 app = FastAPI()
 
 # Load pre-trained ResNet model for category prediction
@@ -125,7 +125,7 @@ async def create_upload_file(file: UploadFile = File(...)):
     os.remove(file.filename)
 
     return {"Predicted Category": predicted_category, "Predicted Color": predicted_color}
-
+# Another method:
 # from fastapi import FastAPI, File, UploadFile, HTTPException
 # import os
 # import cv2
