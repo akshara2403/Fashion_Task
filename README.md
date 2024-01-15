@@ -1,8 +1,8 @@
 # Steps to run the application
 ## Clone the github repository 
-
+'''python
 git clone https://github.com/akshara2403/Fashion_Task.git
-
+'''
 ## Build a docker image
 
 docker build -t your-image-name
