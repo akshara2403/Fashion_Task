@@ -5,7 +5,7 @@ git clone https://github.com/akshara2403/Fashion_Task.git
 ```
 ## Build a docker image
 ```python
-docker build -t your-image-name
+docker build -t image-name
 ```
 ## Run the Container using the following command
 ```python
