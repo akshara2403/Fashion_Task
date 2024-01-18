@@ -133,8 +133,8 @@ from PIL import Image
 import random
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-category_model = torch.load("models/googlenet_category_model.pth", map_location=device)
-color_model = torch.load("models/googlenet_color_model.pth", map_location=device)
+category_model = torch.load("category_model.pth", map_location=device)
+color_model = torch.load("color_model.pth", map_location=device)
 category_model.eval()
 color_model.eval()
 
