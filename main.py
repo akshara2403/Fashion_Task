@@ -1,5 +1,5 @@
 # from fastapi import FastAPI, File, UploadFile, HTTPException
-# import torch
+
 # from torchvision import transforms
 # import torchvision.transforms as transforms
 # from PIL import Image
